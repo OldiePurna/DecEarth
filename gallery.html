@@ -148,14 +148,14 @@ body {
       nextSlide();
       if (auto) {
         clearInterval(slideInterval);
-        slideInterval = setInterval(nextSlide);
+        slideInterval = setInterval(nextSlide, intervalTime);
       }
     });
     prevButton.addEventListener("click", () => {
       prevSlide();
       if (auto) {
         clearInterval(slideInterval);
-        slideInterval = setInterval(nextSlide);
+        slideInterval = setInterval(nextSlide, intervalTime);
       }
     });
 

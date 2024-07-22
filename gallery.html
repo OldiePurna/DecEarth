@@ -166,6 +166,12 @@
         slideInterval = setInterval(nextSlide, intervalTime);
       }
     });
+    // Add event listener for scroll events
+    window.addEventListener('scroll', () => {
+      if (auto) {
+        clearInterval(slideInterval);
+      }
+    });
   </script>
 
 </body>

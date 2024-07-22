@@ -121,7 +121,7 @@ body {
     const nextButton = document.getElementById("next");
     const prevButton = document.getElementById("prev");
     const auto = true;
-    const intervalTime = 50000;
+    // const intervalTime = 50000;
     let slideInterval;
 
     const nextSlide = () => {
@@ -148,14 +148,14 @@ body {
       nextSlide();
       if (auto) {
         clearInterval(slideInterval);
-        slideInterval = setInterval(nextSlide, intervalTime);
+        slideInterval = setInterval(nextSlide);
       }
     });
     prevButton.addEventListener("click", () => {
       prevSlide();
       if (auto) {
         clearInterval(slideInterval);
-        slideInterval = setInterval(nextSlide, intervalTime);
+        slideInterval = setInterval(nextSlide);
       }
     });
 

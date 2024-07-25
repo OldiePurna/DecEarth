@@ -159,6 +159,7 @@
       };
 
       nextButton.addEventListener("click", () => {
+      console.log("next pressed")
         nextSlide();
         if (auto) {
           clearInterval(slideInterval);
@@ -166,6 +167,7 @@
         }
       });
       prevButton.addEventListener("click", () => {
+      console.log("prev pressed")
         prevSlide();
         if (auto) {
           clearInterval(slideInterval);
